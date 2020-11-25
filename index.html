@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/private.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <title>WebDeskTop</title>
+    <script src="./app.js" defer></script>
+    <!-- <script src="js/particles.min.js"></script>//星空粒子插件 -->
+    <!-- <script src="js/zhuti1.js"></script>//主题 -->
+    <script src="./js/click.js"></script>
+</head>
+
+
+<body id="bg">
+
+
+    <div id="light" class="white_content">
+        <button id="take">拍照</button>
+        <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none'" align="right"><button>关闭</button></a>
+
+        <video id="video"></video>
+        <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+
+    <div class="container ">
+        <div class="nav ">
+            <ul>
+                <li class="n_work "><img src="images/icon1.png " /></li>
+                <li onclick="initCpu()"><img src="images/icon2.png " /></li>
+                <li><img src="images/icon3.png" /></li>
+                <li><img src="images/icon4.png" /></li>
+                <li><img src="images/icon5.png" /></li>
+                <li>
+                    <a href="./login.html">
+                        <img src="images/icon6.png" />
+                    </a>
+                </li>
+                <li><img src="images/icon7.png" /></li>
+                <li class="n_notices"><img src="images/icon8.png" /></li>
+                <li class="n_lock"><img src="images/icon9.png" /></li>
+                <li><img src="images/icon10.png" /></li>
+                <li><img src="images/icon11.png" /></li>
+                <li><img src="images/icon12.png" /></li>
+                <li class="n_photo"><img src="images/icon13.png" /></li>
+                <li><img src="images/icon14.png" /></li>
+                <li><img src="images/icon15.png" /></li>
+            </ul>
+        </div>
+        <div class="photo animated ">
+            <form name="form" id="form" method="post" enctype="multipart/form-data" class="choose_local">
+                <input type="file" onchange="showPic(this)" name="upload" id="upload" style="display: none;" onchange="document.form.path.value=this.value" multiple="multiple" accept="image/*" />
+                <input type="button" value="背景选择" onclick="document.form.upload.click()">
+            </form>
+            <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block'"><button>拍照选择</button></a>
+            <div class="photo_exit">X</div>
+            <div class="title">精选壁纸</div>
+            <div class="small_pic">
+                <div class="img_cover">
+                    <span class="progress"></span>
+                </div>
+                <img src="images/bg3.jpg" />
+            </div>
+            <div class="small_pic">
+                <div class="img_cover">
+                    <span class="progress"></span>
+                </div>
+                <img src="images/bg4.jpg" />
+            </div>
+            <div class="small_pic">
+                <div class="img_cover">
+                    <span class="progress"></span>
+                </div>
+                <img src="images/bg5.jpg" />
+            </div>
+            <div class="small_pic">
+                <div class="img_cover">
+                    <span class="progress"></span>
+                </div>
+                <img src="images/bg6.jpg" />
+            </div>
+            <div class="small_pic">
+                <div class="img_cover">
+                    <span class="progress"></span>
+                </div>
+                <img src="images/bg7.jpg" />
+            </div>
+            <div class="small_pic ">
+                <div class="img_cover">
+                    <span class="progress"></span>
+                </div>
+                <img src="images/bg8.jpg" />
+            </div>
+        </div>
+
+        <div class="works animated ">
+            <ul>
+                <li class="animated ">
+                    <div class="w_x ">X</div>
+                    <div class="w_font ">后台注册页面</div>
+                    <div class="w_content animated ">
+                        <a href="http://www.17sucai.com/preview/703246/2017-03-09/%E5%8E%9F%E5%88%9B%E4%BD%9C%E5%93%81/demo.html" target="_blank "><img src="./images/work1.png" /></a>
+                    </div>
+                </li>
+                <li class="animated ">
+                    <div class="w_x ">X</div>
+                    <div class="w_font ">3D之九宫格</div>
+                    <div class="w_content animated ">
+                        <a href="http://www.17sucai.com/preview/703246/2018-01-09/demo11/index.html" target="_blank "><img src="./images/work2.png" /></a>
+                    </div>
+                </li>
+                <li class="animated ">
+                    <div class="w_x ">X</div>
+                    <div class="w_font ">个人简历模板</div>
+                    <div class="w_content animated ">
+                        <a href="http://www.17sucai.com/preview/703246/2018-01-02/resume1/index.html" target="_blank "><img src="./images/work3.png" /></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

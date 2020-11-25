@@ -1,0 +1,22 @@
+{
+    "description": "Web_DeskTop",
+    "display": "standalone",
+    "lang": "en-US",
+    "name": "Web_DeskTop",
+    "short_name": "Web_DeskTop",
+    "start_url": "./index.html",
+    "orientation": "natural",
+    "icons": [{
+        "src": "./images/logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "permissions": [
+        "storage",
+        "system.cpu",
+        "system.display",
+        "system.memory",
+        "system.network",
+        "system.storage"
+    ]
+}
