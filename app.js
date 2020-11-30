@@ -61,7 +61,7 @@ function success(stream) {
 
 //失败回调
 function error(error) {
-    alert(error);
+//     alert(error);
     console.log("失败-访问用户媒体设备失败", error);
 }
 
